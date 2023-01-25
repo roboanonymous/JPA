@@ -20,8 +20,12 @@ public class SpringbootjpaApplication {
 		user.setCity("Hansi");
 		user.setStatus("I am Java Developer");
 		
-		User user1 = UserRepository.save(user);
-		System.out.println(user1);
+		User user2 = new User();
+		user2.setName("Dhruv Gupta");
+		user2.setCity("Delhi");
+		user2.setStatus("I am Python Developer");
+		
+		UserRepository.save(user2);
 	}
 	
 
